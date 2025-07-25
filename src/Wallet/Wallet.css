@@ -1,0 +1,1061 @@
+.wallet-main-content.wallet-left-align {
+  width: 100%;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 4px 32px rgba(35,41,70,0.08);
+  border-radius: 18px 0 0 18px;
+  padding: 32px 32px 32px 32px;
+  min-height: 100vh;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 1200px) {
+  .wallet-main-content.wallet-left-align {
+    margin-left: 80px;
+    max-width: 100vw;
+    padding: 24px 8px 24px 8px;
+    border-radius: 0;
+  }
+}
+
+.wallet-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a237e;
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wallet-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 18px;
+  gap: 24px;
+}
+.wallet-actions {
+  display: flex;
+  gap: 18px;
+}
+.wallet-action-card {
+  background: rgba(245,247,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.06);
+  padding: 10px 18px 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+  flex-direction: column;
+}
+.wallet-action-card input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 6px;
+}
+.wallet-action-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.wallet-action-btn.add {
+  background: #22c55e;
+  color: #fff;
+}
+.wallet-action-btn.withdraw {
+  background: #fb7185;
+  color: #fff;
+}
+.wallet-action-msg.success {
+  color: #22c55e;
+  font-size: 0.98rem;
+  margin-top: 2px;
+}
+.wallet-action-msg.error {
+  color: #fb7185;
+  font-size: 0.98rem;
+  margin-top: 2px;
+}
+
+.wallet-balance-section {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.wallet-balance-card, .wallet-cashback-card, .wallet-premium-card {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f7f8fa 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.08);
+  padding: 18px 28px;
+  min-width: 180px;
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  position: relative;
+}
+.wallet-balance-label, .wallet-cashback-label, .wallet-premium-label {
+  font-size: 1.08rem;
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wallet-balance-value, .wallet-cashback-value, .wallet-premium-value {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #232946;
+}
+.wallet-premium-card {
+  background: linear-gradient(135deg, #fff7e6 0%, #f7f8fa 100%);
+}
+.wallet-cashback-card {
+  background: linear-gradient(135deg, #e0ffe6 0%, #f7f8fa 100%);
+}
+
+.wallet-info-section {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.wallet-info-card, .wallet-premium-benefits-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.08);
+  padding: 18px 24px;
+  flex: 1 1 320px;
+  min-width: 280px;
+  margin-bottom: 8px;
+}
+.wallet-info-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.wallet-info-content div {
+  font-size: 1rem;
+  color: #232946;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wallet-status-active {
+  color: #22c55e;
+  font-weight: 700;
+}
+.wallet-premium-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wallet-premium-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+.wallet-premium-benefit-icon {
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+.wallet-premium-benefit-title {
+  font-weight: 600;
+  color: #232946;
+  font-size: 1.05rem;
+}
+.wallet-premium-benefit-desc {
+  color: #6366f1;
+  font-size: 0.98rem;
+}
+
+.wallet-offers-section {
+  margin-bottom: 18px;
+}
+.wallet-section-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #232946;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wallet-section-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #6366f1;
+  margin: 12px 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 20px;
+}
+.wallet-coupons-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.wallet-coupon-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  padding: 12px 16px;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+.wallet-coupon-code {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.wallet-coupon-desc {
+  font-size: 0.98rem;
+  color: #232946;
+}
+.wallet-card-offers-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.wallet-card-offer-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  padding: 12px 16px;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+.wallet-card-offer-bank {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #22c55e;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.wallet-card-offer-desc {
+  font-size: 0.98rem;
+  color: #232946;
+  margin-bottom: 2px;
+}
+.wallet-card-offer-code {
+  font-size: 0.96rem;
+  color: #6366f1;
+}
+
+.wallet-saved-cards-section {
+  margin-top: 18px;
+}
+.wallet-saved-cards-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.wallet-saved-card-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  padding: 14px 18px;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+.wallet-saved-card-type {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.wallet-saved-card-bank {
+  font-size: 0.98rem;
+  color: #232946;
+  margin-bottom: 1px;
+}
+.wallet-saved-card-number {
+  font-size: 1.05rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #6366f1;
+  margin-bottom: 1px;
+}
+.wallet-saved-card-name {
+  font-size: 0.98rem;
+  color: #232946;
+  margin-bottom: 1px;
+}
+.wallet-saved-card-expiry {
+  font-size: 0.96rem;
+  color: #fb7185;
+}
+
+.wallet-transactions-section {
+  margin-top: 18px;
+}
+.wallet-transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wallet-transaction-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+.wallet-transaction-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-right: 4px;
+}
+.wallet-transaction-info {
+  flex: 1 1 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.wallet-transaction-type {
+  font-weight: 600;
+  color: #232946;
+  font-size: 1.02rem;
+}
+.wallet-transaction-date {
+  color: #6366f1;
+  font-size: 0.96rem;
+}
+.wallet-transaction-amount {
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-right: 8px;
+}
+.wallet-transaction-amount.plus {
+  color: #22c55e;
+}
+.wallet-transaction-amount.minus {
+  color: #fb7185;
+}
+.wallet-transaction-status {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #e0e7ff;
+  color: #2563eb;
+}
+.wallet-transaction-status.success {
+  background: #e0ffe6;
+  color: #22c55e;
+}
+.wallet-transaction-status.failed {
+  background: #ffe6e6;
+  color: #fb7185;
+}
+
+/* Wallet Insights & Rewards Section */
+.wallet-insights-rewards-card {
+  width: 100%;
+  background: linear-gradient(90deg, #e0e7ff 0%, #f7f8fa 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(35,41,70,0.10);
+  padding: 32px 40px 28px 40px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.wallet-insights-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wallet-insights-stats-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.wallet-insight-stat-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  padding: 22px 28px;
+  min-width: 140px;
+  flex: 1 1 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.wallet-insight-stat-card i {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+.wallet-insight-stat-label {
+  font-size: 1.02rem;
+  color: #6366f1;
+  font-weight: 600;
+}
+.wallet-insight-stat-value {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #232946;
+}
+.wallet-rewards-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.wallet-rewards-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  padding: 24px 32px;
+  min-width: 260px;
+  flex: 2 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.wallet-rewards-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wallet-rewards-points {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #232946;
+  margin-bottom: 4px;
+}
+.wallet-rewards-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0e7ff;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+.wallet-rewards-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #fbbf24 0%, #22c55e 100%);
+  border-radius: 6px;
+}
+.wallet-rewards-next {
+  font-size: 0.98rem;
+  color: #6366f1;
+  margin-bottom: 4px;
+}
+.wallet-rewards-badges {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+.wallet-badge {
+  background: #e0ffe6;
+  color: #22c55e;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.wallet-referral-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+  padding: 24px 32px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.wallet-referral-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wallet-referral-status {
+  font-size: 1rem;
+  color: #232946;
+  margin-bottom: 8px;
+}
+.wallet-referral-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+.wallet-referral-btn:hover {
+  background: #1a237e;
+}
+@media (max-width: 900px) {
+  .wallet-insights-rewards-card {
+    padding: 16px 8px;
+    gap: 16px;
+  }
+  .wallet-insights-stats-row, .wallet-rewards-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .wallet-insight-stat-card, .wallet-rewards-card, .wallet-referral-card {
+    min-width: 0;
+    width: 100%;
+    padding: 14px 8px;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .wallet-main-content.wallet-left-align {
+    margin-left: 0;
+    max-width: 100vw;
+    padding: 12px 2vw 12px 2vw;
+    border-radius: 0;
+  }
+  .wallet-header-row, .wallet-balance-section, .wallet-info-section, .wallet-coupons-list, .wallet-card-offers-list, .wallet-saved-cards-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .wallet-balance-card, .wallet-cashback-card, .wallet-premium-card, .wallet-coupon-card, .wallet-card-offer-card, .wallet-saved-card-card, .wallet-info-card, .wallet-premium-benefits-card {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+.referral-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(35,41,70,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.referral-modal {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(35,41,70,0.18);
+  padding: 36px 40px 28px 40px;
+  min-width: 340px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+.referral-modal-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.referral-modal-code-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.referral-modal-code {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #232946;
+  background: #e0e7ff;
+  border-radius: 8px;
+  padding: 6px 18px;
+  letter-spacing: 2px;
+}
+.referral-modal-copy-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.referral-modal-copy-btn:hover {
+  background: #1a237e;
+}
+.referral-modal-copy-msg {
+  color: #22c55e;
+  font-size: 1rem;
+  margin-left: 6px;
+}
+.referral-modal-details {
+  font-size: 1.05rem;
+  color: #232946;
+  background: #f7f8fa;
+  border-radius: 10px;
+  padding: 14px 18px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.referral-modal-details ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.referral-modal-close-btn {
+  background: #fb7185;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+.referral-modal-close-btn:hover {
+  background: #b91c1c;
+}
+@media (max-width: 600px) {
+  .referral-modal {
+    min-width: 0;
+    width: 98vw;
+    padding: 16px 4vw 12px 4vw;
+  }
+  .referral-modal-details {
+    padding: 8px 4px;
+    font-size: 0.98rem;
+  }
+}
+
+.wallet-premium-benefits-row {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  margin-top: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: none;
+ /* Hide scrollbar for Firefox */
+ scrollbar-width: none;
+
+ /* Hide scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+ -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.wallet-premium-benefits-row::-webkit-scrollbar {
+ display: none;
+}
+.wallet-premium-benefit-card {
+  background: linear-gradient(135deg, #fff7e6 0%, #e0e7ff 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.10);
+  min-width: 210px;
+  max-width: 240px;
+  padding: 22px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+}
+.wallet-premium-benefit-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 6px 24px rgba(35,41,70,0.16);
+}
+.wallet-premium-benefit-icon-large {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.wallet-premium-benefit-title {
+  font-weight: 700;
+  color: #232946;
+  font-size: 1.08rem;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.wallet-premium-benefit-desc {
+  color: #6366f1;
+  font-size: 0.98rem;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .wallet-premium-benefits-row {
+    gap: 10px;
+    padding-bottom: 2px;
+  }
+  .wallet-premium-benefit-card {
+    min-width: 160px;
+    max-width: 200px;
+    padding: 12px 6px 10px 6px;
+  }
+  .wallet-premium-benefit-icon-large {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+}
+
+.wallet-coupons-list.wallet-coupons-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.wallet-coupon-card.wallet-coupon-card-large {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f7f8fa 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.10);
+  min-width: 220px;
+  max-width: 260px;
+  padding: 22px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.wallet-coupon-card-large:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(35,41,70,0.16);
+}
+.wallet-coupon-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+.wallet-coupon-code-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+.wallet-coupon-code {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 1px;
+}
+.wallet-coupon-copy-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.wallet-coupon-copy-btn:hover {
+  background: #1a237e;
+}
+.wallet-coupon-copy-msg {
+  color: #22c55e;
+  font-size: 0.98rem;
+  margin-left: 4px;
+}
+.wallet-coupon-desc {
+  font-size: 1rem;
+  color: #232946;
+}
+
+.wallet-card-offers-list.wallet-card-offers-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+}
+.wallet-card-offer-card.wallet-card-offer-card-large {
+  background: linear-gradient(135deg, #fff7e6 0%, #e0e7ff 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.10);
+  min-width: 260px;
+  max-width: 320px;
+  padding: 22px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.wallet-card-offer-card-large:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(35,41,70,0.16);
+}
+.wallet-card-offer-bank-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+.wallet-card-offer-bank-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e7ff;
+  overflow: hidden;
+}
+.wallet-card-offer-bank-logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.wallet-card-offer-bank-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+.wallet-card-offer-desc {
+  font-size: 1rem;
+  color: #232946;
+}
+.wallet-card-offer-code-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+.wallet-card-offer-code {
+  font-size: 1rem;
+  color: #6366f1;
+}
+.wallet-card-offer-copy-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.wallet-card-offer-copy-btn:hover {
+  background: #1a237e;
+}
+.wallet-card-offer-copy-msg {
+  color: #22c55e;
+  font-size: 0.98rem;
+  margin-left: 4px;
+}
+@media (max-width: 900px) {
+  .wallet-coupons-list.wallet-coupons-list-grid,
+  .wallet-card-offers-list.wallet-card-offers-list-grid {
+    gap: 10px;
+  }
+  .wallet-coupon-card.wallet-coupon-card-large {
+    min-width: 140px;
+    max-width: 100vw;
+    padding: 12px 6px 10px 6px;
+  }
+  .wallet-card-offer-card.wallet-card-offer-card-large {
+    min-width: 160px;
+    max-width: 100vw;
+    padding: 12px 6px 10px 6px;
+  }
+  .wallet-card-offer-bank-logo {
+    width: 28px;
+    height: 28px;
+  }
+  .wallet-card-offer-bank-logo img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.wallet-saved-cards-list.wallet-saved-cards-list-glass {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+}
+.wallet-saved-card-card.wallet-saved-card-card-glass {
+  position: relative;
+  background: rgba(255,255,255,0.55);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(35,41,70,0.12);
+  backdrop-filter: blur(8px);
+  min-width: 260px;
+  max-width: 320px;
+  padding: 38px 22px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.wallet-saved-card-card-glass:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(35,41,70,0.18);
+}
+.wallet-saved-card-logo-float {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.10);
+  border: 4px solid #fff;
+  z-index: 2;
+}
+.wallet-saved-card-logo-float img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.wallet-saved-card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.wallet-saved-card-type-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+.wallet-saved-card-type {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.wallet-saved-card-badge-primary {
+  background: #22c55e;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-left: 4px;
+}
+.wallet-saved-card-number {
+  font-size: 1.15rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #6366f1;
+  margin-bottom: 1px;
+}
+.wallet-saved-card-bank {
+  font-size: 1rem;
+  color: #232946;
+  margin-bottom: 1px;
+}
+.wallet-saved-card-name {
+  font-size: 0.98rem;
+  color: #232946;
+  margin-bottom: 1px;
+}
+.wallet-saved-card-expiry {
+  font-size: 0.96rem;
+  color: #fb7185;
+}
+@media (max-width: 900px) {
+  .wallet-saved-card-card.wallet-saved-card-card-glass {
+    min-width: 140px;
+    max-width: 100vw;
+    padding: 24px 6px 10px 6px;
+  }
+  .wallet-saved-card-logo-float {
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+    top: -18px;
+  }
+  .wallet-saved-card-logo-float img {
+    width: 22px;
+    height: 22px;
+  }
+}
