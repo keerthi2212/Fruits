@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Fruits/static/css/main.20d199da.css",
+    "main.js": "/Fruits/static/js/main.ddb42bbd.js",
+    "static/js/453.f43c7e52.chunk.js": "/Fruits/static/js/453.f43c7e52.chunk.js",
+    "static/media/location.png": "/Fruits/static/media/location.0f26bf9ed94644be0426.png",
+    "static/media/se-tt-removebg-preview.png": "/Fruits/static/media/se-tt-removebg-preview.e97d10273796660c43f9.png",
+    "static/media/Wishlist.png": "/Fruits/static/media/Wishlist.1912352f3e662d328c09.png",
+    "static/media/s-c-removebg-preview.png": "/Fruits/static/media/s-c-removebg-preview.b18fb743a3e9c1a92c5d.png",
+    "static/media/bell-no.png": "/Fruits/static/media/bell-no.474b444327bd71ba6b18.png",
+    "static/media/rate.png": "/Fruits/static/media/rate.b7b8f47a4f499e20b064.png",
+    "static/media/Cart.png": "/Fruits/static/media/Cart.426b74aa2296b7feaf07.png",
+    "static/media/wallet.png": "/Fruits/static/media/wallet.3a910f153a04aaa5eca9.png",
+    "static/media/settings-24.png": "/Fruits/static/media/settings-24.7b323d0da896223eeee1.png",
+    "static/media/unnamed.png": "/Fruits/static/media/unnamed.d5dfa52e4ad6335bbfbe.png",
+    "static/media/verified-s.png": "/Fruits/static/media/verified-s.29c65f596a5630003905.png",
+    "static/media/Fabox.png": "/Fruits/static/media/Fabox.ce3d3317c3bda242922e.png",
+    "static/media/help-c.png": "/Fruits/static/media/help-c.e842e96da93840e2f278.png",
+    "static/media/co.png": "/Fruits/static/media/co.e5b93448665f0c550302.png",
+    "static/media/Fahome.png": "/Fruits/static/media/Fahome.1dff3d38a2bf1bd9afa8.png",
+    "static/media/order.png": "/Fruits/static/media/order.adce28b81d1271d06e65.png",
+    "static/media/payment.png": "/Fruits/static/media/payment.2b7880a7ec0313b3768d.png",
+    "static/media/Phonepe.png": "/Fruits/static/media/Phonepe.16158be8710408f3561e.png",
+    "static/media/Chocolates.webp": "/Fruits/static/media/Chocolates.c2ed3a293c1853fbac18.webp",
+    "static/media/Fauser.png": "/Fruits/static/media/Fauser.961568814dceb733c85a.png",
+    "static/media/Gpay.webp": "/Fruits/static/media/Gpay.1cd194f800c6b80ed10d.webp",
+    "static/media/slick.svg": "/Fruits/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Fruits/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Fruits/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Fruits/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Fruits/index.html",
+    "main.20d199da.css.map": "/Fruits/static/css/main.20d199da.css.map",
+    "main.ddb42bbd.js.map": "/Fruits/static/js/main.ddb42bbd.js.map",
+    "453.f43c7e52.chunk.js.map": "/Fruits/static/js/453.f43c7e52.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20d199da.css",
+    "static/js/main.ddb42bbd.js"
+  ]
+}
