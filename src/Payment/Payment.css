@@ -15,7 +15,7 @@
   margin-bottom: 18px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #0e7490;
+  color: #228B22;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
 }
 
 .saved-section h3, .history-section h3 {
-  color: #0e7490;
+  color: #0e9049;
   font-size: 1.3rem;
   margin-bottom: 12px;
   font-weight: 600;
@@ -58,7 +58,7 @@
   border-radius: 8px;
   padding: 10px 16px;
   margin-bottom: 8px;
-  color: #0e7490;
+  color: #0e9053;
   font-size: 1.08rem;
   font-weight: 500;
 }
@@ -80,13 +80,13 @@
 }
 
 .edit-btn {
-  background: #e0f2fe;
-  color: #0ea5e9;
-  border: 1px solid #38bdf8;
+  background: #e1fee0;
+  color: #228B22;
+  border: 1px solid #228B22;
 }
 .edit-btn:hover {
   background: #fff;
-  color: #0ea5e9;
+  color: #228B22;
 }
 
 .delete-btn {
@@ -99,11 +99,8 @@
   color: red;
 }
 
-.add-btn i, .edit-btn i, .delete-btn i {
-  color: #fff;
-}
 .edit-btn i {
-  color: #0ea5e9;
+  color: #0e904b;
 }
 .delete-btn i {
   color: #ef4444;
@@ -182,7 +179,7 @@
 }
 
 .payment-modal h4 {
-  color: #0e7490;
+  color: #0e904b;
   margin-bottom: 18px;
   font-size: 1.3rem;
   font-weight: 700;
@@ -214,7 +211,7 @@
 }
 
 .payment-add-btn {
-  background: linear-gradient(90deg, #0e7490 60%, #38bdf8 100%);
+  background: linear-gradient(90deg, #0e904b 60%, #0e904b 100%);
   color: #fff;
   font-weight: 600;
   border: none;
@@ -230,7 +227,7 @@
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .payment-add-btn:hover {
-  background: linear-gradient(90deg, #38bdf8 60%, #0ea5e9 100%);
+  background: linear-gradient(90deg, #0e904b 1%  ,  #0e904b 100%);
   color: #fff;
   box-shadow: 0 4px 16px rgba(56, 189, 248, 0.18);
 }
@@ -246,7 +243,7 @@
   margin-top: 30px;
 }
 .payment-other-section h3 {
-  color: #0ea5e9;
+  color: #0e9049;
   font-size: 1.25rem;
   margin-bottom: 8px;
   display: flex;
@@ -327,17 +324,16 @@
 }
 .payment-modal-input {
   padding: 9px 12px;
-  border: 1px solid #38bdf8;
+  border: 1.5px solid #0bd455;
   border-radius: 6px;
   font-size: 1rem;
   outline: none;
   margin-bottom: 0;
   background: #f6fbfd;
-  color: #0e7490;
+  color: #000;
   transition: border 0.2s;
 }
 .payment-modal-input:focus {
-  border: 1.5px solid #0e7490;
   background: #fff;
 }
 .payment-modal-form .payment-add-btn {
@@ -350,7 +346,7 @@
 }
 
 .history-table thead tr th {
-  background: #0e7490 !important;
+  background: #016b1cc9 !important;
   color: #fff !important;
 }
 .history-table tbody tr {
@@ -378,7 +374,7 @@
 }
 
 .modal-actions .payment-add-btn {
-  background: linear-gradient(90deg, #0e7490 60%, #38bdf8 100%);
+  background: linear-gradient(90deg, #0e9053 60%, #0bd455 100%);
   color: #fff;
   border: none;
 }

@@ -358,7 +358,7 @@ function Wallet() {
                 <div className="wallet-insight-stat-value">32</div>
               </div>
               <div className="wallet-insight-stat-card">
-                <i className="fa fa-undo" style={{color:'#6366f1'}}></i>
+                <i className="fa fa-undo" style={{color:'#0004fdff'}}></i>
                 <div className="wallet-insight-stat-label">Refunds</div>
                 <div className="wallet-insight-stat-value">3</div>
               </div>

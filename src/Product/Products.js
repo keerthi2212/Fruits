@@ -271,7 +271,7 @@ const Products = () => {
         <div className="header-left">
         <img src={require('../Images/unnamed.png')} alt="Logo" className="logo" />
           <button className="menu-btn" onClick={() => setSidebarOpen(!sidebarOpen)}>
-            <i className="fa fa-bars" style={{ color: '#2563eb' }}></i>
+            <i className="fa fa-bars"  style={{ color: '#4ec3a0 ' }}></i>
           </button>
          
           <span className={`membership-badge premium${currentMembership.key === 'premium' ? ' active' : ' inactive'}`}> 
@@ -352,14 +352,14 @@ const Products = () => {
                 style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', cursor: 'pointer' }}
               >
                 <img src={categoryImages[cat]} alt={cat} className="product2-category-img" />
-                <span style={{ fontSize: 13, marginTop: 2 }}>{cat}</span>
+                <span style={{ fontSize: 12, marginTop: 2 , paddingBottom: 5}}>{cat}</span>
               </div>
             ))}
           </div>
           <div className="product2-filter-row product2-filter-row-flex">
             {/* Dynamic search bar with icon, parallel to Sort & Filter button */}
             <div style={{ display: 'flex', alignItems: 'center', flex: 1 }}>
-              <span className="search-bar-icon-product" style={{ marginRight: 8, color: '#2563eb', fontSize: 18 }}>
+              <span className="search-bar-icon-product" style={{ marginRight: 8, color: '#6b8e23', fontSize: 18 }}>
                 <i className="fa fa-search"></i>
               </span>
               <input

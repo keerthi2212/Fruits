@@ -306,26 +306,14 @@
   margin-bottom: 1.2rem;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #2563eb;
+  color: #009921;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .bank-coupons-col .coupon-row {
   background: #f0f7ff;
   border: 1.5px solid #2563eb22;
 }
-.coupon-row.bank .coupon-bank-badge {
-  background: #7c4dff;
-  color: #fff;
-  font-size: 0.98rem;
-  font-weight: 600;
-  border-radius: 0.7rem;
-  padding: 0.15rem 0.7rem;
-  margin-left: 0.7rem;
-  margin-right: 0.7rem;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 8px 0 rgba(124,77,255,0.10);
-  display: inline-block;
-}
+
 .coupon-title {
   color: #232946;
 }
@@ -402,8 +390,8 @@
   color: #00695c;
 }
 .coupon-row.bank .coupon-bank-badge {
-  background: #fce4ec;
-  color: #ad1457;
+  background: #e4fcee;
+  color: #004915;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 1.2rem;
@@ -619,7 +607,7 @@
   flex-wrap: wrap;
 }
 .coupon-discount-badge {
-  background: linear-gradient(90deg, #7c4dff 60%, #00bfae 100%);
+  background: linear-gradient(90deg, #01aa12 0%, #0fa872 100%);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 700;
@@ -630,7 +618,7 @@
   margin-right: 0.7rem;
 }
 .coupon-discount-badge.bank {
-  background: linear-gradient(90deg, #ff7043 60%, #ad1457 100%);
+  background:linear-gradient(90deg, #01aa12 0%, #0fa872 100%);
 }
 .coupon-title {
   font-size: 1.15rem;
@@ -793,7 +781,7 @@
   color: #2563eb;
 }
 .coupon-type-icon.bank {
-  color: #ad1457;
+  color: #2563eb;
 }
 .coupon-card-details.compact {
   font-size: 0.98rem;
@@ -977,12 +965,12 @@
   color: #2563eb;
 }
 .coupon-type-icon.bank {
-  color: #ad1457;
+  color: #2563eb;
 }
 
 /* Gradient button styles for copy and view */
 .copy-code-btn {
-  background: linear-gradient(90deg, #8e2de2 0%, #4a90e2 100%);
+  background: linear-gradient(90deg, #01aa12 0%, #0fa872 100%);
   color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -995,7 +983,7 @@
   box-shadow: 0 2px 8px 0 rgba(142,45,226,0.10);
 }
 .copy-code-btn:hover, .copy-code-btn:active {
-  background: linear-gradient(90deg, #4a90e2 0%, #8e2de2 100%);
+  background: linear-gradient(90deg, #0fa872 0%, #01aa12  100%);
   box-shadow: 0 4px 16px 0 rgba(142,45,226,0.13);
 }
 .coupon-view-btn {
@@ -1149,10 +1137,17 @@
   margin-bottom: 10px;
 }
 .coupon-modal-terms{
-    background-color: #4a90e226;
+    background-color: #4ae26326;
     padding: 10px 15px;
     border-radius: 4px;
     padding-bottom: 20px;
+    width: 97%;
+}
+.coupon-modal-terms-title{
+  font-size: 1.05rem;
+  color: #232946;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 .coupon-modal .coupon-terms {
   color: #888;

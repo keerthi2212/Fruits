@@ -77,7 +77,7 @@
   position: absolute;
   top: 18px;
   left: 35px;
-  background: #ff6f00;
+  background: #66bb6a;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 800;
@@ -150,7 +150,9 @@
 
 .sidebar {
   width: 220px;
-  background: #f5f7fb;
+  /* background: #f5f7fb; */
+  /* background: linear-gradient(45deg, #d2f8d2, #a4e4a4); */
+  background: linear-gradient(90deg, #4ec3a0 , #3d8b68 );
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -173,11 +175,11 @@
   scrollbar-width: none;    /* Firefox */
 }
 .sidebar::-webkit-scrollbar-thumb {
-  background: #2563eb;
+  background: #fff;
   border-radius: 8px;
 }
 .sidebar::-webkit-scrollbar-thumb:hover {
-  background: #1e40af;
+  background: #fff;
 }
 .sidebar.collapsed {
   width: 70px;
@@ -211,7 +213,7 @@
   display: flex;
   align-items: center;
   padding: 12px 16px;
- color:  #0e7490 ;
+ color:  #fff;
   text-decoration: none;
   transition: background 0.2s;
   border-radius: 6px;
@@ -227,8 +229,8 @@
 .nav-link:hover,
 .link-active {
   background: linear-gradient(90deg, #fff 60%, #fff 100%);
-  color:  #0e7490  ;
-  border: 1px solid #0e7490;
+  color:  #388e3c  ;
+  border: 1px solid #fff;
 }
 
 .nav-icon {
@@ -251,7 +253,7 @@
   display: flex;
   align-items: center;
   font-size: 28px;
-  color: #ff6f00;
+  color: #388e3c;
   transition: color 0.2s;
 }
 .mic-btn:hover {
@@ -364,7 +366,7 @@
 }
 .user-name {
   font-size: 16px;
-  color: #2563eb;
+  color: #388e3c;
   font-weight: 500;
 }
 .main-content {
@@ -473,7 +475,7 @@
   height: 28px;
 }
 .search-btn {
-  background: #ff6f00;
+  background: linear-gradient(to right, #66bb6a, #388e3c);
   color: #fff;
   border: none;
   border-radius: 40px;
@@ -517,7 +519,7 @@
 }
 .freq-pill:hover {
   background: #fff;
-  color: #ff6f00;
+  color: #388e3c;
 }
 @media (max-width: 900px) {
   .hero-title {
@@ -719,7 +721,7 @@
 .recommended-qty-row {
   position: absolute;
   right: 10px;
-  top: 121px;
+  bottom: 23px;
   z-index: 3;
 }
 .qty-controls {
@@ -741,7 +743,7 @@
   transition: background 0.2s;
 }
 .qty-btn:hover {
-  background: #ff6f00;
+  background: #6b8e23;
   color: #fff;
 }
 .qty-value {
@@ -791,7 +793,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #ff6f00;
+  background: #66bb6a;
   color: #fff;
   font-size: 0.85rem;
   font-weight: 700;
@@ -803,11 +805,11 @@
 .recommended-cart-btn {
   position: absolute;
   right: 14px;
-  bottom: 18px;
+  bottom: 0px;
   margin-left: 0;
   z-index: 2;
   margin-left: auto;
-  background: #ff6f00;
+  background: #388e3c;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -871,7 +873,7 @@
   cursor: pointer;
 }
 .category-card:hover {
-  box-shadow: 0 6px 18px rgba(255,111,0,0.14);
+  box-shadow: 0 6px 18px rgba(60, 255, 0, 0.14);
   transform: translateY(-2px) scale(1.03);
 }
 .category-img {
@@ -929,8 +931,8 @@
 }
 .on-sale-fw-arrow {
   background: #fff;
-  border: 2px solid #ff6f00;
-  color: #ff6f00;
+  border: 2px solid #388e3c;
+  color: #66bb6a;
   border-radius: 50%;
   width: 48px;
   height: 50px;
@@ -947,10 +949,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border: 1px solid #ff6f00;
 }
 .on-sale-fw-arrow:hover {
-  background: #ff6f00;
+  background: #6b8e23;
   color: #fff;
   box-shadow: 0 2px 8px rgba(255,111,0,0.18);
   border: 1px solid #fff;
@@ -1182,7 +1183,7 @@
 .bestseller-qty-row {
   position: absolute;
   right: 10px;
-  top: 121px;
+  bottom:14px;
   z-index: 3;
 }
 .bestseller-info {
@@ -1379,10 +1380,7 @@
   bottom: 0px;
   left: 0;
   width: 100%;
-background: linear-gradient(
-  to right,
-  rgba(255,111,0,0.85) 
-);
+background: linear-gradient(135deg, #6b8e23, #3e5f1c);
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
@@ -1395,7 +1393,7 @@ background: linear-gradient(
   transition: background 0.3s;
 }
 .fruit-slick-card:hover .fruit-slick-name {
-  background: rgba(255,111,0,0.85);
+  background: linear-gradient(135deg, #3e5f1c, #6b8e23 );
   color: #fff;
 }
 

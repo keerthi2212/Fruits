@@ -5,7 +5,7 @@
 
 /* Hero Section */
 .help-hero {
-  background: linear-gradient(90deg, #0e7490, #38bdf8);
+  background: linear-gradient(90deg, #017d1c, #7ee9ba);
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -52,7 +52,7 @@
 }
 
 .help-search-bar button {
-  background-color: #0e7490;
+  background-color: #017d1c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -63,7 +63,7 @@
 }
 
 .help-search-bar button:hover {
-  background-color: #0ea5e9;
+  background-color: #02833c;
 }
 
 /* Help Topics Grid */
@@ -101,20 +101,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e0f7fa; /* Light blue */
+  background-color: #e0fae4; /* Light blue */
   border-radius: 50%;
 }
 
 .topic-icon-wrapper .fa {
   font-size: 1.5rem;
-  color: #0ea5e9; /* Sky blue */
+  color: #077b26; /* Sky blue */
 }
 
 /* Topic Content */
 .topic-content h3 {
   margin: 0 0 8px;
   font-size: 1.25rem;
-  color: #0e7490; /* Teal blue */
+  color: #02833c; /* Teal blue */
 }
 
 .topic-content p {
@@ -159,7 +159,8 @@
 
 .help-modal-header h2 {
   font-size: 1.5rem;
-  color: #1e3a8a;
+  color: #0e9056;
+  text-align: center;
   margin: 0;
 }
 
@@ -203,7 +204,7 @@
 }
 
 .qna-question-title .fa {
-  color: #0ea5e9;
+  color: #017d1c;
   font-size: 1.2rem;
 }
 
@@ -213,14 +214,14 @@
   color: #4b5563;
   line-height: 1.6;
   padding-left: 10px;
-  border-left: 3px solid #38bdf8;
+  border-left: 3px solid #017d1c;
   position: relative;
 }
 
 .copy-btn {
   margin-top: 10px;
-  background: #e0f7fa;
-  color: #0e7490;
+  background: #e0faed;
+  color: #066a1a;
   border: none;
   border-radius: 5px;
   padding: 6px 14px;
@@ -232,8 +233,8 @@
   transition: background 0.2s, color 0.2s;
 }
 .copy-btn:hover {
-  background: #bae6fd;
-  color: #0ea5e9;
+  background: #066a1a;
+  color: #e0faed;
 }
 
 .feedback-row {
@@ -243,7 +244,6 @@
   gap: 10px;
 }
 .feedback-btn {
-  background: #e0f7fa;
   border: none;
   border-radius: 50%;
   width: 32px;
@@ -251,14 +251,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0ea5e9;
+  background: #e0faed;
+  color: #066a1a;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
 .feedback-btn.selected, .feedback-btn:hover {
-  background: #38bdf8;
-  color: #fff;
+  background: #066a1a;
+  color: #e0faed;
 }
 
 .contact-support-row {
@@ -267,7 +268,7 @@
   justify-content: center;
 }
 .contact-support-btn {
-  background: linear-gradient(90deg, #0e7490 60%, #38bdf8 100%);
+  background: linear-gradient(90deg, #0e9056 60%, #12a53c 100%);
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -282,7 +283,7 @@
   transition: background 0.2s, color 0.2s;
 }
 .contact-support-btn:hover {
-  background: linear-gradient(90deg, #38bdf8 60%, #0ea5e9 100%);
+  background: linear-gradient(90deg,  #12a53c 100%, #0e9056 60%);
   color: #fff;
 }
 

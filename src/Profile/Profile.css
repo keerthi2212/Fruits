@@ -33,7 +33,7 @@
 .profile-main-name {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #222;
+  color: #228B22;
   margin-bottom: 0.2rem;
 }
 .profile-main-role {
@@ -137,7 +137,7 @@
 .profile-main-contact-title, .profile-main-basic-title {
   font-size: 1.13rem;
   font-weight: 600;
-  color: #0e7490;
+  color: #228B22;
   margin-bottom: 0.7rem;
 }
 .profile-main-contact-row, .profile-main-basic-row {
@@ -317,7 +317,7 @@
 }
 .profile-edit-btn {
   position: absolute;
-  background: linear-gradient(90deg, #06beb6 0%, #48b1f3 100%);
+  background: linear-gradient(90deg, #06beb6 0%, #63f77e 100%);
   color: #fff;
   font-size: 1.08rem;
   font-weight: 700;
@@ -332,7 +332,7 @@
   letter-spacing: 0.5px;
 }
 .profile-edit-btn:hover {
-  background: linear-gradient(90deg, #48b1f3 0%, #06beb6 100%);
+  background: linear-gradient(90deg, #63f77e 0%, #06beb6 100%);
   box-shadow: 0 4px 16px 0 rgba(72,177,243,0.13);
   transform: translateY(-2px) scale(1.03);
 }
@@ -364,13 +364,13 @@
   align-items: center;
   gap: 0.7rem;
   min-width: 0;
-  border: 1.2px solid #e0f2fe;
+  border: 1.5px solid #e0fef2;
   transition: box-shadow 0.18s, border 0.18s, transform 0.15s;
   cursor: pointer;
 }
 .profile-info-card:hover {
   box-shadow: 0 6px 24px 0 rgba(72,177,243,0.16);
-  border: 1.5px solid #48b1f3;
+  border: 1.5px solid #63f77e;
   transform: translateY(-2px) scale(1.03);
 }
 .profile-info-card-icon {
@@ -381,7 +381,7 @@
 .profile-info-card-title {
   font-size: 1.18rem;
   font-weight: 700;
-  color: #0e7490;
+  color: #228B22;
   margin-bottom: 0.2rem;
   text-align: center;
 }

@@ -8,14 +8,14 @@
   margin-bottom: 28px;
 }
 .address-header-row h2 {
-  color: #0e7490;
+  color: #0e9021;
   font-size: 2rem;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .address-add-btn {
-  background: linear-gradient(90deg, #0e7490 60%, #38bdf8 100%);
+  background: linear-gradient(90deg, #0e9017 60%, #12bf21 100%);
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -31,7 +31,7 @@
   margin-right: 100px;
 }
 .address-add-btn:hover {
-  background: linear-gradient(90deg, #0ea5e9 60%, #38bdf8 100%);
+  background: linear-gradient(90deg, #12bf21 60%, #0e9017 100%);
   color: #fff;
 }
 .address-list {
@@ -58,14 +58,14 @@
   position: relative;
   margin-bottom: 4px;
   transition: all 0.3s ease-in-out;
-  border: 1px solid #0e7490;
+  border: 1px solid #12bf21;
 }
 .address-card-card:hover{
 transform: scaleX(1.02);
 }
 .add-de{
     margin-bottom: 0px;
-    color: #0e7490;
+    color: #0e9021;
     margin-top: -14px;
     text-align: center;
 }
@@ -82,8 +82,8 @@ transform: scaleX(1.02);
   margin-bottom: 8px;
 }
 .address-type {
-  background: #e0f7fa;
-  color: #0e7490;
+   background: #e0faed;
+  color: #066a1a;
   font-weight: 700;
   border-radius: 8px;
   padding: 6px 16px;
@@ -181,7 +181,7 @@ transform: scaleX(1.02);
   gap: 6px;
 }
 .address-field label {
-  color: #0e7490;
+  color: #0e9021;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 2px;
@@ -191,7 +191,7 @@ transform: scaleX(1.02);
   padding: 12px 14px;
   /* min-height: 44px; */
   border-radius: 4px;
-  border: 1.5px solid #0e7490;
+  border: 1.5px solid #ddd;
 }
 .address-input:focus {
   border: 1.5px solid #0e7490;
@@ -241,14 +241,14 @@ transform: scaleX(1.02);
   color: #fff;
 }
 .address-save-btn {
-  background: linear-gradient(90deg, #0e7490 60%, #38bdf8 100%);
+  background: linear-gradient(90deg, #0e9035 60%, #38f862 100%);
   color: #fff;
   border: none;
   box-shadow: 0 2px 8px rgba(56, 189, 248, 0.10);
   transition: background 0.2s, color 0.2s;
 }
 .address-save-btn:hover {
-  background: linear-gradient(90deg, #0ea5e9 60%, #38bdf8 100%);
+  background: linear-gradient(90deg, #0e9035 60%, #0e9035 100%);
   color: #fff;
 }
 .address-actions {
@@ -258,8 +258,8 @@ transform: scaleX(1.02);
 }
 .address-action-btn {
   background: #f6fbfd;
-  border: 1.5px solid #38bdf8;
-  color: #0e7490;
+  border: 1.5px solid #12bf21;
+  color: #0e9021;
   border-radius: 6px;
   padding: 7px 13px;
   font-size: 1.1rem;
@@ -270,7 +270,7 @@ transform: scaleX(1.02);
   justify-content: center;
 }
 .address-action-btn.view:hover {
-  background: #38bdf8;
+  background: #0e9021;
   color: #fff;
 }
 .address-action-btn.edit {

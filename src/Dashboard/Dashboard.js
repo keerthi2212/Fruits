@@ -306,7 +306,7 @@ function Home() {
         <div className="header-left">
         <img src={require('../Images/unnamed.png')} alt="Logo" className="logo" />
           <button className="menu-btn" onClick={() => setSidebarOpen(!sidebarOpen)}>
-            <i className="fa fa-bars" style={{ color: '#2563eb' }}></i>
+            <i className="fa fa-bars" style={{ color: '#4ec3a0 ' }}></i>
           </button>
          
           <span className={`membership-badge premium${currentMembership.key === 'premium' ? ' active' : ' inactive'}`}> 
@@ -532,10 +532,10 @@ function Home() {
                     justifyContent: 'center',
                   }}
                 >
-                  <div className="custom-sale-name" style={{fontSize:'2.5rem', fontWeight:900, color:'#ff6f00', marginBottom:18, lineHeight:1.1, textShadow:'0 2px 8px rgba(0,0,0,0.10)'}}>
+                  <div className="custom-sale-name" style={{fontSize:'2.5rem', fontWeight:900, color:'#3fb984', marginBottom:18, lineHeight:1.1, textShadow:'0 2px 8px rgba(0,0,0,0.10)'}}>
                     {recommendedProducts[onSaleIndex].name}
                   </div>
-                  <div className="custom-sale-offer" style={{fontSize:'1.2rem', color:'#232946', fontWeight:700, marginBottom:12}}>
+                  <div className="custom-sale-offer" style={{fontSize:'1.2rem', color:'#0e7490', fontWeight:700, marginBottom:12}}>
                     {recommendedProducts[onSaleIndex].offer}
                   </div>
                   <div className="on-sale-fw-price-row" style={{marginBottom:12}}>
@@ -560,7 +560,7 @@ function Home() {
                   </div>
                   <button
                     className="custom-sale-goto-btn"
-                    style={{position: 'relative', right: 0, marginLeft: 'auto', background: '#2563eb', color: '#fff', border: 'none', borderRadius: '8px', padding: '9px 28px', fontWeight: 700, fontSize: '1.05rem', cursor: 'pointer', boxShadow: '0 1px 4px rgba(37,99,235,0.10)', minWidth: 'auto', marginTop: 10}}
+                    style={{position: 'relative', right: 0, marginLeft: 'auto', background: 'linear-gradient(90deg, #e0fbe0, #c0e6c0, #a0d1a0, #80bc80, #60a760, #409240, #207d20, #006800)', color: '#fff', border: 'none', borderRadius: '8px', padding: '9px 28px', fontWeight: 700, fontSize: '1.05rem', cursor: 'pointer', boxShadow: '0 1px 4px rgba(37,99,235,0.10)', minWidth: 'auto', marginTop: 10}}
                     onClick={() => navigate('/products', { state: { productName: recommendedProducts[onSaleIndex].name } })}
                   >
                     Explore Product
@@ -632,31 +632,26 @@ function Home() {
               <div className="recommended-card" key={product.id}>
                 <div className="offer-badge">{product.offerPercent}% OFF</div>
                 <img src={product.image} alt={product.name} className="recommended-img" />
-                {!productQuantities[product.id] && (
-                  <button className="add-btn" onClick={() => handleAddToCart(product.id)}>
-                    <i className="fa fa-plus"></i>
-                  </button>
-                )}
-                <div className="recommended-qty-row">
+                <div className="recommended-info">
+                  <div className="recommended-name">{product.name}<span className="recommended-unit">({product.unit})</span> </div>
+                  {/* Style .recommended-unit in Dashboard.css */}
+                  <div className="recommended-offer">{product.offer}</div>
+                  <div className="recommended-price-row">
+                    <span className="recommended-price">₹{product.price}</span>
+                    <span className="recommended-original-price">₹{product.originalPrice}</span>
+                  </div>
+                  <div className="recommended-qty-row">
                     {productQuantities[product.id] ? (
                       <div className="qty-controls">
                         <button className="qty-btn" onClick={() => handleDecrement(product.id)}>-</button>
                         <span className="qty-value">{productQuantities[product.id]}</span>
                         <button className="qty-btn" onClick={() => handleIncrement(product.id)}>+</button>
                       </div>
-                    ) : null}
-                  </div>
-                <div className="recommended-info">
-                  <div className="recommended-name">{product.name}<span className="recommended-unit">({product.unit})</span> </div> 
-                  {/* Style .recommended-unit in Dashboard.css */}
-                  <div className="recommended-offer">{product.offer}</div>
-
-                  <div className="recommended-price-row">
-                    <span className="recommended-price">₹{product.price}</span>
-                    <span className="recommended-original-price">₹{product.originalPrice}</span>
-                    <button className="recommended-cart-btn" onClick={() => handleAddToCart(product.id)} title="Add to Cart">
-                      <i className="fa fa-shopping-cart"></i>
-                    </button>
+                    ) : (
+                      <button className="recommended-cart-btn" onClick={() => handleAddToCart(product.id)} title="Add to Cart">
+                        <i className="fa fa-shopping-cart"></i>
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -757,24 +752,27 @@ function Home() {
                     <i className="fa fa-plus"></i>
                   </button>
                 )}
-                <div className="bestseller-qty-row">
-                  {productQuantities[product.id] ? (
-                    <div className="qty-controls">
-                      <button className="qty-btn" onClick={() => handleDecrement(product.id)}>-</button>
-                      <span className="qty-value">{productQuantities[product.id]}</span>
-                      <button className="qty-btn" onClick={() => handleIncrement(product.id)}>+</button>
-                    </div>
-                  ) : null}
-                </div>
+               
                 <div className="bestseller-info">
                   <div className="bestseller-name">{product.name}</div>
                   <div className="bestseller-offer">{product.offer}</div>
                   <div className="bestseller-price-row">
                     <span className="bestseller-price">₹{product.price}</span>
                     <span className="bestseller-original-price">₹{product.originalPrice}</span>
-                    <button className="recommended-cart-btn" onClick={() => handleAddToCart(product.id)} title="Add to Cart">
+                     <div className="bestseller-qty-row">
+                  {productQuantities[product.id] ? (
+                    <div className="qty-controls">
+                      <button className="qty-btn" onClick={() => handleDecrement(product.id)}>-</button>
+                      <span className="qty-value">{productQuantities[product.id]}</span>
+                      <button className="qty-btn" onClick={() => handleIncrement(product.id)}>+</button>
+                    </div>
+                  ) :
+                   <button className="recommended-cart-btn" onClick={() => handleAddToCart(product.id)} title="Add to Cart">
                       <i className="fa fa-shopping-cart"></i>
                     </button>
+                    }
+                </div>
+                    
                   </div>
                 </div>
               </div>

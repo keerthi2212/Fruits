@@ -15,10 +15,10 @@
 .orders-search-input {
   padding: 10px 16px;
   border-radius: 8px;
-  border: 1.5px solid #0e7490;
+  border: 1.5px solid #228B22;
   font-size: 1.05rem;
   background: #f7f8fa;
-  min-width: 60%;
+  min-width: 47.5%;
 }
 .order-modern-total{
   display: flex;
@@ -29,9 +29,10 @@
 .orders-status-select {
   padding: 10px 16px;
   border-radius: 8px;
-  border: 1px solid #0e7490;
+  border: 1.5px solid #228B22;
   font-size: 1.05rem;
   background: #f7f8fa;
+  width: 25%;
 }
 
 /* Orders List & Card */
@@ -139,8 +140,8 @@
 .orders-apply-btn {
   /* background: linear-gradient(90deg, #0e7490 60%, #38bdf8 100%); */
   background: #fff;
-  color: #0e7490;
-  border: 1px solid #0e7490;
+  color: #006400;
+  border: 1px solid #006400;
   border-radius: 999px;
   padding: 10px 28px;
   font-size: 1.05rem;
@@ -156,7 +157,7 @@
   font-size: 1.1em;
 }
 .orders-apply-btn:hover {
-  background: linear-gradient(90deg, #38bdf8 10%, #0e7490 100%);
+  background: linear-gradient(90deg, #22c55e 10%, #2E8B57 100%);
   transform: scale(1.04);
   color: #fff;
   border: #fff;
@@ -392,7 +393,7 @@ align-items: center;
 }
 .order-card-modern:hover {
   box-shadow: 0 8px 32px rgba(37,99,235,0.16);
-  border-color: #0e7490;
+  border-color: #228B22;
   transform: translateY(-2px) scale(1.03);
 }
 .order-card-modern-header {
@@ -404,7 +405,7 @@ align-items: center;
 }
 .order-modern-id {
   font-weight: 700;
-  color: #2563eb;
+  color: #38bdf8;
   font-size: 1.08rem;
 }
 .order-status-pill-modern {
@@ -421,12 +422,12 @@ align-items: center;
 .order-status-cancelled { background: #ef4444; }
 .order-status-pending { background: #f59e42; }
 .order-status-shipped { background: #2563eb; }
-.order-status-delivered { background: #38bdf8; }
+.order-status-delivered { background: #03A6A1; }
 
 .order-view-btn-icon-modern {
   background: #fff;
-  border: 1px solid #0e7490 ;
-  color: #0e7490;
+  border: 1px solid #2E8B57;
+  color: #2E8B57;
   font-weight: 700;
   font-family: Georgia, 'Times New Roman', Times, serif;
   border-radius: 4px;
@@ -440,7 +441,7 @@ align-items: center;
   transition: background 0.15s, color 0.15s, transform 0.13s;
 }
 .order-view-btn-icon-modern:hover {
-  background: #0e7490;
+  background: linear-gradient(to right, rgba(46, 139, 87, 0.6) , rgba(46, 139, 87, 0.8) );
   color: #fff;
   transform: scale(1.08);
 }
@@ -468,8 +469,8 @@ align-items: center;
   margin-top: 6px;
 }
 .order-modern-item-chip {
-  background: #e0e7ff;
-  color: #2563eb;
+  background:linear-gradient(to right, #2E8B57 , #2E8B57 );
+  color: #fff;
   border-radius: 999px;
   padding: 4px 14px;
   font-size: 0.97rem;
@@ -489,7 +490,7 @@ align-items: center;
   font-weight: 600;
 }
 .order-modern-total-value {
-  color: #2563eb;
+  color: #2E8B57;
   font-size: 1.18rem;
   font-weight: 800;
 }
@@ -597,14 +598,14 @@ align-items: center;
   margin: 8px 0 8px 0;
 }
 .order-modal-modern-items-table th, .order-modal-modern-items-table td {
-  border: 1px solid #e0e7ef;
+  border: 1px solid #FFF;
   padding: 6px 10px;
   text-align: left;
   font-size: 0.98rem;
 }
 .order-modal-modern-items-table th {
-  background: #e0e7ff;
-  color: #2563eb;
+  background: #d6fae663;
+  color: #2E8B57;
   font-weight: 700;
 }
 .order-modal-modern-total {
@@ -620,7 +621,7 @@ align-items: center;
   justify-content: flex-end;
 }
 .order-modal-modern-download {
-  background: #2563eb;
+  background: linear-gradient(to right, rgb(46, 139, 87, 0.7), rgb(50, 205, 50));
   color: #fff;
   border: none;
   border-radius: 999px;
@@ -632,18 +633,20 @@ align-items: center;
   gap: 8px;
   cursor: pointer;
   transition: background 0.15s, transform 0.13s;
+  border: 1.5px solid transparent;
 }
 .order-modal-modern-download i {
   font-size: 1.1em;
 }
 .order-modal-modern-download:hover {
-  background: #38bdf8;
-  color: #232946;
+ background: linear-gradient(to right, rgba(241, 241, 241, 0.7), rgb(252, 253, 252));
+  color: #2E8B57;
+  border: 1.5px solid #2E8B57;
   transform: scale(1.04);
 }
 .order-modal-modern-close-btn {
-  background: #f1f5f9;
-  color: #232946;
+  background: linear-gradient(to right, rgba(241, 241, 241, 0.7), rgb(252, 253, 252));
+  color: #2E8B57;
   border: none;
   border-radius: 999px;
   padding: 8px 22px;
@@ -654,13 +657,16 @@ align-items: center;
   gap: 8px;
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
+  border: 1.5px solid #006400;
 }
 .order-modal-modern-close-btn i {
   font-size: 1.1em;
 }
 .order-modal-modern-close-btn:hover {
-  background: #e0e7ff;
-  color: #2563eb;
+ background: linear-gradient(to right, rgb(46, 139, 87, 0.7), rgb(50, 205, 50));
+  color: #fff;
+  border: 1.5px solid #fff;
+    transform: scale(1.04);
 }
 .order-modal-modern-bill-summary {
   background: #f7f8fa;
@@ -675,7 +681,7 @@ align-items: center;
 }
 .order-modal-modern-bill-title {
   font-weight: 700;
-  color: #2563eb;
+  color: #22c55e;
   font-size: 1.13rem;
   margin-bottom: 8px;
 }
@@ -687,13 +693,13 @@ align-items: center;
   margin-bottom: 2px;
 }
 .order-modal-bill-coupon {
-  color: #2563eb;
+  color: #e49a2b;
   font-size: 1.01rem;
   font-weight: 600;
 }
 .order-modal-bill-total {
   font-weight: 800;
-  color: #2563eb;
+  color: #006400;
   font-size: 1.18rem;
   margin-top: 8px;
 }

@@ -135,7 +135,7 @@ function Orders() {
 
   // Download order as text
   const handleDownloadOrder = (order) => {
-    const text = `Order ID: ${order.id}\nDate: ${order.date} ${order.time}\nStatus: ${order.status}\nPayment: ${order.payment}\nAddress: ${order.address}\nPin: ${order.pin}\nItems:\n${order.items.map(i => `- ${i.name} x${i.qty} (₹${i.price})`).join('\n')}\nTotal: ₹${order.total}`;
+    const text = `Order ID: ${order.id}\nDate: ${order.date} ${order.time}\nStatus: ${order.status}\nPayment: ${order.payment}\nAddress: ${order.address}\nPin: ${order.pin}\nItems:\n${order.items.map(i => `- ${i.name} x ${i.qty} (₹${i.price})`).join('\n')}\nTotal: ₹${order.total}`;
     const blob = new Blob([text], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -253,7 +253,7 @@ function Orders() {
                     <div className='order-mod'>
                     <div className='order-mod'>
                       {order.items.map((item, idx) => (
-                        <span className="order-modern-item-chip" key={idx}>{item.name} x{item.qty}</span>
+                        <span className="order-modern-item-chip" key={idx}>{item.name} x {item.qty}</span>
                       ))}
                     </div>
                   </div>
