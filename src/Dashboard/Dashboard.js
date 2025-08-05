@@ -108,16 +108,16 @@ function Home() {
       originalPrice: 50,
       offerPercent: 10,
     },
-    {
-      id: 'tomato',
-      name: 'Tomato',
-      unit: '1kg bag',
-      image: 'https://media.post.rvohealth.io/wp-content/uploads/2020/09/AN313-Tomatoes-732x549-Thumb-732x549.jpg',
-      offer: 'Farm Fresh Tomatoes 18% OFF',
-      price: 33,
-      originalPrice: 40,
-      offerPercent: 18,
-    },
+    // {
+    //   id: 'tomato',
+    //   name: 'Tomato',
+    //   unit: '1kg bag',
+    //   image: 'https://media.post.rvohealth.io/wp-content/uploads/2020/09/AN313-Tomatoes-732x549-Thumb-732x549.jpg',
+    //   offer: 'Farm Fresh Tomatoes 18% OFF',
+    //   price: 33,
+    //   originalPrice: 40,
+    //   offerPercent: 18,
+    // },
   ];
 
   // Product data for Slick Slider (fruits)
@@ -734,15 +734,15 @@ function Home() {
                 originalPrice: 16999,
                 offerPercent: 5,
               },
-              {
-                id: 'meat',
-                name: 'Meat',
-                image: 'https://www.shutterstock.com/image-photo/balanced-diet-cooking-culinary-food-260nw-300553067.jpg',
-                offer: 'Fresh Meat 12% OFF',
-                price: 399,
-                originalPrice: 455,
-                offerPercent: 12,
-              },
+              // {
+              //   id: 'meat',
+              //   name: 'Meat',
+              //   image: 'https://www.shutterstock.com/image-photo/balanced-diet-cooking-culinary-food-260nw-300553067.jpg',
+              //   offer: 'Fresh Meat 12% OFF',
+              //   price: 399,
+              //   originalPrice: 455,
+              //   offerPercent: 12,
+              // },
             ].map(product => (
               <div className="bestseller-card" key={product.id}>
                 <div className="offer-badge">{product.offerPercent}% OFF</div>

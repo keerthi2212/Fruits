@@ -139,7 +139,7 @@
 }
 .product2-page {
   padding: 2.5rem 2rem 2rem 2rem;
-  background: #f7f8fa;
+  /* background: #f7f8fa; */
   min-height: 100vh;
 }
 .product2-filter-row {
@@ -293,7 +293,7 @@
   gap: 0.5rem;
 }
 .product2-add-btn:hover {
-  background: linear-gradient(90deg, #1d4ed8 60%, #2563eb 100%);
+  background: linear-gradient(45deg, #006800 , #207d20, #60a760, #409240, );
   box-shadow: 0 4px 16px 0 rgba(37,99,235,0.13);
 }
 .product2-qty-row {
@@ -826,7 +826,7 @@
   margin-bottom: 10px;
 }
 .product-modal-price {
-  color: #2563eb;
+  color: #006800;
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -881,7 +881,8 @@
   gap: 12px;
 }
 .product-modal-add-btn {
-  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+ background-color: #00bfb2;
+background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 600;
@@ -896,7 +897,8 @@
   gap: 0.5rem;
 }
 .product-modal-add-btn:hover {
-  background: linear-gradient(90deg, #1d4ed8 60%, #2563eb 100%);
+  background-color: #00bfb2;
+background-image: linear-gradient(315deg, #028090 0%, #00bfb2 74%);
   box-shadow: 0 4px 16px 0 rgba(37,99,235,0.13);
 }
 .product-modal-qty-row {
@@ -905,8 +907,9 @@
   gap: 0.7rem;
 }
 .product-modal-qty-btn {
-  background: #f1f5f9;
-  color: #2563eb;
+   background-color: #e9ffe9;
+   background-image: linear-gradient(315deg, #e9ffe9 0%, #e9ffe9 74%);
+  color: #388e3c;
   border: none;
   border-radius: 50%;
   width: 2rem;
@@ -920,7 +923,8 @@
   justify-content: center;
 }
 .product-modal-qty-btn:hover {
-  background: #2563eb;
+   background-color: #00bfb2;
+background-image: linear-gradient(315deg, #028090 0%, #00bfb2 74%);
   color: #fff;
 }
 .product-modal-qty-value {
@@ -960,8 +964,8 @@
   display: inline-block;
   vertical-align: middle;
   margin-left: 16px;
-  background: #e0f2fe;
-  color: #2563eb;
+  background: #e9ffe9;
+  color: #388e3c;
   font-size: 1.05rem;
   font-weight: 600;
   border-radius: 0.7rem;
@@ -982,7 +986,7 @@
   justify-content: flex-end;
 }
 .product-modal-thumbnail.selected {
-  border: 2px solid #2563eb;
+  border: 2px solid #388e3c;
 }
 .product2-quantity {
   font-size: 0.98rem;
@@ -1011,8 +1015,8 @@
   gap: 10px;
 }
 .product-modal-quantity-highlight {
-  background: #e0f2fe;
-  color: #2563eb;
+  background: #ccffcc;
+  color: #388e3c;
   font-size: 1.05rem;
   font-weight: 700;
   border-radius: 0.7rem;
