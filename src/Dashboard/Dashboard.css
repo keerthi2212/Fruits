@@ -154,8 +154,8 @@
   /* background: linear-gradient(45deg, #d2f8d2, #a4e4a4); */
   /* background: linear-gradient(90deg, #4ec3a0 , #3d8b68 ); */
 /* background: rgb(80,200,120); */
-background: linear-gradient(95deg, 
-#3eb489 0%, rgba(62,180,137,1) 100%);
+background-color: #addfad;
+background-image: linear-gradient(315deg, #addfad 0%, #74d680 74%);
   color: #fff;
   display: flex;
   flex-direction: column;

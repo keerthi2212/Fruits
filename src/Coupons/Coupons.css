@@ -839,9 +839,9 @@
 }
 /* Ensure main-content adapts to sidebar */
 .crm-dashboard .main-content {
-  max-width: calc(100% - 250px);
+  max-width: calc(100% - 220px);
   width: 100%;
-  margin-left: 220px;
+  margin-left: 190px;
   transition: margin-left 0.3s, max-width 0.3s;
 }
 .crm-dashboard.collapsed .main-content {
