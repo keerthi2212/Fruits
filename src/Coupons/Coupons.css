@@ -144,7 +144,7 @@
   align-items: center;
 }
 .coupon-row {
-  width: 90%;
+  width: 88%;
   background: #fff;
   border-radius: 1.2rem;
   box-shadow: 0 2px 12px rgba(35,41,70,0.08);
@@ -154,6 +154,8 @@
   flex-direction: column;
   align-items: stretch;
   position: relative;
+  overflow: hidden;
+  margin-right: 20px;
 }
 .coupon-row-main {
   display: flex;
@@ -294,11 +296,13 @@
   width: 100%;
   align-items: flex-start;
 } */
+
 .coupons-column {
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: -20px;
 }
 .coupons-col-title {
   font-size: 2rem;
@@ -838,7 +842,7 @@
   }
 }
 /* Ensure main-content adapts to sidebar */
-.crm-dashboard .main-content {
+/* .crm-dashboard .main-content {
   max-width: calc(100% - 220px);
   width: 100%;
   margin-left: 190px;
@@ -847,7 +851,7 @@
 .crm-dashboard.collapsed .main-content {
   margin-left: 70px;
   max-width: calc(100% - 100px);
-}
+} */
 
 /* 2-column grid for coupons */
 .coupons-list-nocards.grid-2col {

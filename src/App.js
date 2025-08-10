@@ -11,7 +11,7 @@ import Coupons from './Coupons/Coupons';
 import Payment from './Payment/Payment';
 import Settings from './Settings/Settings';
 import Address from './Address/Address';
-import Help from './Help/Help';
+import Help from './Help copy/Help';
 import './App.css';
 
 
