@@ -278,69 +278,72 @@ function Help() {
         </div>
       </aside>
       <main className="main-content">
-        <div className="help-center-green">
-          <section className="help-hero-green">
-            <div className="help-hero-content">
-              <h1><span className="help-hero-leaf"><i className="fa fa-leaf"></i></span> Need Help?</h1>
-              <p className="help-hero-desc">Advice and answers from the Fruits Team. We're here for you 24/7!</p>
-              <div className="help-search-bar-green">
-                <i className="fa fa-search"></i>
-                <input type="text" placeholder="Type your question or keyword..." />
-                <button className="help-search-btn-green">SEARCH</button>
-              </div>
+        {/* Welcome/Intro Section */}
+        {/* <div className="help-welcome">
+            <h2>Welcome to the Fruits & Vegetables Help Center!</h2>
+            <p>Find answers, tips, and resources to make your shopping experience smooth and enjoyable. If you need further assistance, our support team is just a click away.</p>
+          </div> */}
+        <div className="help-center-container">
+          <div className="help-hero">
+            <h1>We are here to Help you.</h1>
+            <p>Advice and answers from the Fruits Team</p>
+            <div className="help-search-bar">
+              <i className="fa fa-search"></i>
+              <input type="text" placeholder="Type your search..." />
+              <button>SEARCH</button>
             </div>
-          </section>
-          <section className="help-topics-section-green">
-            <h2 className="help-topics-title-green">Browse Help Topics</h2>
-            <div className="help-topics-grid-green">
-              {helpTopics.map((topic, index) => (
-                <div className="topic-card-green new-design" key={index} onClick={() => handleTopicClick(topic)}>
-                  <div className="topic-icon-green new-icon-bg">
-                    <i className={`fa ${topic.icon}`}></i>
-                  </div>
-                  <div className="topic-content-green">
-                    <h3>{topic.title}</h3>
-                    <p>{topic.description}</p>
-                  </div>
-                  <div className="topic-card-underline"></div>
-                  <div className="topic-card-corner"></div>
+          </div>
+
+          
+
+          
+
+          <div className="help-topics-grid">
+            {helpTopics.map((topic, index) => (
+              <div className="topic-card" key={index} onClick={() => handleTopicClick(topic)}>
+                <div className="topic-icon-wrapper">
+                  <i className={`fa ${topic.icon}`}></i>
                 </div>
-              ))}
-            </div>
-          </section>
+                <div className="topic-content">
+                  <h3>{topic.title}</h3>
+                  <p>{topic.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </main>
       {isModalOpen && selectedTopic && (
-        <div className="help-modal-green-overlay" onClick={handleCloseModal}>
-          <div className="help-modal-green" onClick={e => e.stopPropagation()}>
-            <div className="help-modal-green-header">
-              <h2><i className={`fa ${selectedTopic.icon}`}></i> {selectedTopic.title}</h2>
-              <button className="help-modal-green-close-btn" onClick={handleCloseModal}>
+        <div className="help-modal-overlay" onClick={handleCloseModal}>
+          <div className="help-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="help-modal-header">
+              <h2>{selectedTopic.title}</h2>
+              <button className="help-modal-close-btn" onClick={handleCloseModal}>
                 <i className="fa fa-times"></i>
               </button>
             </div>
-            <div className="help-modal-green-body">
+            <div className="help-modal-body">
               {selectedTopic.qna.map((item, index) => (
-                <div className="qna-item-green" key={index}>
-                  <div className="qna-question-green" onClick={() => handleQuestionToggle(index)}>
-                    <div className="qna-question-title-green">
+                <div className="qna-item" key={index}>
+                  <div className="qna-question" onClick={() => handleQuestionToggle(index)}>
+                    <div className="qna-question-title">
                       <i className={`fa ${item.icon}`}></i>
                       <span>{item.q}</span>
                     </div>
                     <i className={`fa fa-chevron-${openQuestion === index ? 'up' : 'down'}`}></i>
                   </div>
                   {openQuestion === index && (
-                    <div className="qna-answer-green">
+                    <div className="qna-answer">
                       <p>{item.a}</p>
-                      <button className="copy-btn-green" onClick={() => handleCopy(item.a, index)}>
+                      <button className="copy-btn" onClick={() => handleCopy(item.a, index)}>
                         <i className="fa fa-copy"></i> {copySuccess === index ? 'Copied!' : 'Copy Answer'}
                       </button>
-                      <div className="feedback-row-green">
+                      <div className="feedback-row">
                         <span>Was this helpful?</span>
-                        <button className={`feedback-btn-green${feedback[index] === 'yes' ? ' selected' : ''}`} onClick={() => handleFeedback(index, 'yes')}>
+                        <button className={`feedback-btn${feedback[index] === 'yes' ? ' selected' : ''}`} onClick={() => handleFeedback(index, 'yes')}>
                           <i className="fa fa-thumbs-up"></i>
                         </button>
-                        <button className={`feedback-btn-red${feedback[index] === 'no' ? ' selected' : ''}  `  } onClick={() => handleFeedback(index, 'no')}>
+                        <button className={`feedback-btn${feedback[index] === 'no' ? ' selected' : ''}`} onClick={() => handleFeedback(index, 'no')}>
                           <i className="fa fa-thumbs-down"></i>
                         </button>
                       </div>
@@ -348,8 +351,8 @@ function Help() {
                   )}
                 </div>
               ))}
-              <div className="contact-support-row-green">
-                <button className="contact-support-btn-green" onClick={handleContactSupport}>
+              <div className="contact-support-row">
+                <button className="contact-support-btn" onClick={handleContactSupport}>
                   <i className="fa fa-headset"></i> Contact Support
                 </button>
               </div>

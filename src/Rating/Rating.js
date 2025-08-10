@@ -232,33 +232,32 @@ function Rating() {
       <main className="main-content">
 
         <div className="review-list-section full-width">
-          <h2>Reviews</h2>
-          <div className="review-list">
+          <h2 className="review-list-title">Customer Reviews</h2>
+          <div className="review-list-modern">
             {reviews.map((review, idx) => (
-              <div className="review-card" key={idx} onClick={() => openReviewModal(review)} role="button" tabIndex={0}>
-                <div className="review-card-content">
-                  <div className="review-card-details">
-                    <div className="review-order-id"><b>Order ID:</b> {orderIds[idx]}</div>
-                    <div className="review-card-items-names">
-                      {review.items.map(itemName => (
-                        <div className="review-product-name" key={itemName}>{itemName},</div>
-                      ))}
-                    </div>
-                    <div className="review-quality"><b>Quality:</b> {review.quality}</div>
-                    <div className="review-rating">
-                      {[1,2,3,4,5].map(star => (
-                        <span key={star} className={`star${review.rating >= star ? ' filled' : ''}`}>
-                          <i className="fa fa-star"></i>
-                        </span>
-                      ))}
-                    </div>
-                    <div className="review-text">{review.text}</div>
-                    <div className="review-info-row">
-                      <span className="review-delivery"><b>Delivery:</b> {review.delivery}</span>
-                      <span className="review-packaging"><b>Packaging:</b> {review.packaging}</span>
-                    </div>
-                    <div className="review-date">{review.submittedAt ? new Date(review.submittedAt).toLocaleDateString() : ''}</div>
-                  </div>
+              <div className="review-card-modern" key={idx} onClick={() => openReviewModal(review)} role="button" tabIndex={0}>
+                <div className="review-card-modern-header">
+                  <span className="review-card-modern-orderid">{orderIds[idx]}</span>
+                  <span className="review-card-modern-date">{review.submittedAt ? new Date(review.submittedAt).toLocaleDateString() : ''}</span>
+                </div>
+                <div className="review-card-modern-items">
+                  {review.items.map(itemName => (
+                    <span className="review-card-modern-item" key={itemName}>{itemName}</span>
+                  ))}
+                </div>
+                <div className="review-card-modern-rating-row">
+                  <span className="review-card-modern-stars">
+                    {[1,2,3,4,5].map(star => (
+                      <span key={star} className={`star-modern${review.rating >= star ? ' filled' : ''}`}>
+                        <i className="fa fa-star"></i>
+                      </span>
+                    ))}
+                  </span>
+                </div>
+                <div className="review-card-modern-text">{review.text}</div>
+                <div className="review-card-modern-info-row">
+                  <span className="review-card-modern-delivery">Delivery:&nbsp; <span className={`de-${review.delivery}`}>{review.delivery}</span></span>
+                  {/* <span className="review-card-modern-packaging">Packaging:&nbsp;<span className={`pack-${review.packaging}`} >{review.packaging}</span></span> */}
                 </div>
               </div>
             ))}
@@ -268,8 +267,10 @@ function Rating() {
           <div className="review-modal-overlay" onClick={closeReviewModal}>
             <div className="review-modal" onClick={e => e.stopPropagation()}>
               <>
+               <button className="modal-close-btn" onClick={closeReviewModal}><i className="fa fa-times"></i></button>
                 <h3>Review Details</h3>
                 <div className="modal-product-info">
+                   <div className="modal-order-id"><b>Order ID:</b> {orderIds[reviews.findIndex(r => r === selectedReview)]}</div>
                   <div className="modal-items-list">
                     {selectedReview.items.map(itemName => {
                       const product = products.find(p => p.name === itemName);
@@ -283,7 +284,7 @@ function Rating() {
                     })}
                   </div>
                 </div>
-                <div className="modal-review-quality"><b>Quality:</b> {selectedReview.quality}</div>
+                <div className="modal-review-quality"> Quality:  <span className={`quality${selectedReview.quality}`}>&nbsp;{selectedReview.quality}</span> </div>
                 <div className="modal-review-rating">
                   {[1,2,3,4,5].map(star => (
                     <span key={star} className={`star${selectedReview.rating >= star ? ' filled' : ''}`}>
@@ -293,10 +294,8 @@ function Rating() {
                 </div>
                 <div className="modal-review-text"><b>Review:</b> "{selectedReview.text}"</div>
                 <div className="modal-review-date"><b>Submitted At:</b> {selectedReview.submittedAt ? new Date(selectedReview.submittedAt).toLocaleString() : ''}</div>
-                <div className="modal-review-delivery"><b>Delivery:</b> {selectedReview.delivery}</div>
-                <div className="modal-review-packaging"><b>Packaging:</b> {selectedReview.packaging}</div>
-                <div className="modal-order-id"><b>Order ID:</b> {orderIds[reviews.findIndex(r => r === selectedReview)]}</div>
-                <button className="modal-close-btn" onClick={closeReviewModal}>Close</button>
+                <div className="modal-review-delivery"><b>Delivery:</b> <span className={`deli-${selectedReview.delivery}`}>{selectedReview.delivery}</span> </div>
+                <div className="modal-review-packaging"><b>Packaging:</b> <span className={`selec-pac${selectedReview.packaging}`}>{selectedReview.packaging}</span></div>
               </>
             </div>
           </div>
